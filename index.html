@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="icon" onclick="Resp()"><i id="menu"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg></i>
+
+
+        </div>
+        <div id="nav">
+            <div id="close" onclick="remove()"><i><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                        data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <path fill="currentColor"
+                            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                        </path>
+                    </svg></i> </div>
+
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Loggin</li>
+                <li>SignUp</li>
+            </ul>
+        </div>
+        <h1>Responsive Nav Using JS</h1>
+    </div>
+    <div class="header">
+
+    </div>
+    <script>
+
+        // var Icon=document.getElementsByClassName('icon');
+        // var Nav=document.getElementsByClassName('nav');
+        // document.getElementById("icon").addEventListener('click',Resp());
+        function Resp() {
+            document.getElementById("nav").classList.add("resnav");
+            // document.getElementById("close").style.visibility="visible";
+            // document.getElementById("menu").style.visibility="hidden";
+            // document.getElementById("menu").classList.toggle("close");
+            // document.getElementById("menu").style.visibility="hidden";
+
+
+        }
+
+        function remove() {
+            document.getElementById("nav").classList.remove("resnav");
+        }
+
+    </script>
+</body>
+
+</html>
